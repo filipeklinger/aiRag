@@ -1,0 +1,28 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": ".NET Launch (Development)",
+            "type": "coreclr",
+            "request": "launch",
+            "preLaunchTask": "build",
+            // Altere para o caminho do seu executável se necessário
+            "program": "${workspaceFolder}/bin/Debug/net9.0/<SeuProjeto>.dll",
+            "args": [],
+            "cwd": "${workspaceFolder}",
+            "stopAtEntry": false,
+            // Define a variável de ambiente ASPNETCORE_ENVIRONMENT para Development
+            "env": {
+                "ASPNETCORE_ENVIRONMENT": "Development"
+            },
+            "externalConsole": false,
+            "nowebbrowser": false, // Altere para false para abrir o navegador
+            "dotnetPath": "${env:DOTNET_ROOT:-v}dotnet",
+            "serverReadyAction": {
+                "action": "openbrowser",
+                // Ajuste a URL do Swagger conforme a sua configuração
+                "uriFormat": "%s/swagger"
+            }
+        }
+    ]
+}
