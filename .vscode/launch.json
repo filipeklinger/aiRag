@@ -7,7 +7,7 @@
             "request": "launch",
             "preLaunchTask": "build",
             // Altere para o caminho do seu executável se necessário
-            "program": "${workspaceFolder}/bin/Debug/net9.0/<SeuProjeto>.dll",
+            "program": "${workspaceFolder}/bin/Debug/net8.0/aiRag.dll",
             "args": [],
             "cwd": "${workspaceFolder}",
             "stopAtEntry": false,
