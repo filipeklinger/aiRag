@@ -25,6 +25,9 @@ var summaries = new[]
 
 app.MapGet("/summarize", async (string inputText) =>
 {
+    // var summaryService = new LlmKernelMemorySummaryService();
+    // var summary = await summaryService.SummarizeAsync(inputText);
+
     var summaryService = new LlmSummaryService();
     var summary = await summaryService.SummarizeAsync(inputText);
     return summary;
